@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Flowers() {
   return (
-    <>
+    <div className="absolute overflow-hidden w-screen h-screen">
       <Image
         src="/img-4.png"
         alt="flower"
@@ -63,6 +63,6 @@ export default function Flowers() {
         width="600"
         height="200"
       />
-    </>
+    </div>
   )
 }
