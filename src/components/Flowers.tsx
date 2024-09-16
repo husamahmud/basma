@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Flowers() {
   return (
-    <div className="absolute overflow-hidden w-screen h-screen">
+    <div className="absolute z-0 h-screen w-screen overflow-hidden">
       <Image
         src="/img-4.png"
         alt="flower"
