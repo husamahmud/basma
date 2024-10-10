@@ -1,0 +1,17 @@
+name: Eslint check
+on: [push]
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: start the job
+        run: echo "🚀 Start the job"
+
+      - name: Checkout code from repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Eslint
+        run: npx eslint .
